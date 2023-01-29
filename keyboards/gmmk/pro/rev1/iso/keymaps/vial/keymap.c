@@ -83,3 +83,25 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][2] = {
     [2] = { ENCODER_CCW_CW(KC_TRNS, KC_TRNS) },
     [3] = { ENCODER_CCW_CW(KC_TRNS, KC_TRNS) },
 };
+
+void rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
+if (IS_HOST_LED_ON(USB_LED_CAPS_LOCK)) {
+        RGB_MATRIX_INDICATOR_SET_COLOR(3, 0, 255, 0); //capslock key
+        RGB_MATRIX_INDICATOR_SET_COLOR(68, 255, 0, 0); //side led 01
+        RGB_MATRIX_INDICATOR_SET_COLOR(71, 255, 0, 0); //side led 02
+        RGB_MATRIX_INDICATOR_SET_COLOR(74, 255, 0, 0); //side led 03
+        RGB_MATRIX_INDICATOR_SET_COLOR(77, 255, 0, 0); //side led 04
+        RGB_MATRIX_INDICATOR_SET_COLOR(81, 255, 0, 0); //side led 05
+        RGB_MATRIX_INDICATOR_SET_COLOR(84, 255, 0, 0); //side led 06
+        RGB_MATRIX_INDICATOR_SET_COLOR(88, 255, 0, 0); //side led 07
+        RGB_MATRIX_INDICATOR_SET_COLOR(92, 255, 0, 0); //side led 08
+        RGB_MATRIX_INDICATOR_SET_COLOR(69, 255, 0, 0); //side led 12
+        RGB_MATRIX_INDICATOR_SET_COLOR(72, 255, 0, 0); //side led 13
+        RGB_MATRIX_INDICATOR_SET_COLOR(75, 255, 0, 0); //side led 14
+        RGB_MATRIX_INDICATOR_SET_COLOR(78, 255, 0, 0); //side led 15
+        RGB_MATRIX_INDICATOR_SET_COLOR(82, 255, 0, 0); //side led 16
+        RGB_MATRIX_INDICATOR_SET_COLOR(85, 255, 0, 0); //side led 17
+        RGB_MATRIX_INDICATOR_SET_COLOR(89, 255, 0, 0); //side led 18
+        RGB_MATRIX_INDICATOR_SET_COLOR(93, 255, 0, 0); //side led 19;
+    }
+}
